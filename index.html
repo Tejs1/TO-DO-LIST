@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Todo List</title>
   <link rel="stylesheet" href="./style.css" />
+  <link
+  href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+  rel="stylesheet"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+  integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+  crossorigin="anonymous"
+  />
 </head>
 
 <body>
@@ -28,28 +38,55 @@
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-sm-12 col-md-8">
-          <h1>Welcome in Todo List Application</h1>
           <div class="todo-inner">
             <div class="form-row">
+             
+
+              <form>
+                <input type="text" class="todo-input" id="addtaskinput" />
+                <button class="todo-button" type="submit" id="addtaskbtn">
+                  <i class="fas fa-plus-square"></i>
+                </button>
+                <button class="todo-button" type="submit" id="savetaskbtn" style="display: none;">
+                  <i class="fas fa-plus-square"></i> OK
+                </button>
+              
+
+
+
               <div class="col-8 mr-sm-2">
-                <input type="text" class="form-control" placeholder="Enter your task" id="addtaskinput" />
+                <!-- <input type="text" class="form-control" placeholder="Enter your task" id="addtaskinput" /> -->
                 <input type="hidden" id="saveindex">
               </div>
-              <button type="button" class="btn btn-success mr-sm-2" id="addtaskbtn">
-                Add Task
-              </button>
-              <button type="button" class="btn btn-success mr-sm-2" id="savetaskbtn" style="display: none;">
+              <!-- <button type="button" class="" id="addtaskbtn"> 
+                 Add Task
+              </button> -->
+              <!-- <button type="button" class="" id="savetaskbtn" style="display: none;">
                 Save Task
-              </button>
+              </button> -->
+
+
+
+            
               <button type="button" id="deleteallbtn" class="btn btn-danger">
                 Delete All
               </button>
+            
+
+          </form>
+
+
+
+
+            <div class="todo-container">
+              <ul class="todo-list" id="addedtasklist"></ul>
             </div>
-            <div class="to-do-output">
-              <table class="table table-striped mt-3 mb-0" id="addedtasklist">
+        
+            <!-- <div class="to-do-output">
+              <table class="" id="addedtasklist">
                 
               </table>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
